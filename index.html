@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Fit - Transform Your Body and Mind</title>
+
+
+    <link rel="icon" type="image/png" href="favicon.png">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700;900&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="loader">
+            <i class="fas fa-dumbbell"></i>
+            <div class="loading-text">CLICK FIT</div>
+        </div>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-dumbbell"></i>
+                <span class="brand-text">CLICK<span class="brand-highlight">FIT</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#classes">Classes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link btn-join" href="#join">Join Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="home" class="hero-section">
+        <div class="hero-bg-image"></div>
+        <div class="hero-overlay"></div>
+        <div class="particles" id="particles-js"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-8">
+                    <div class="hero-content">
+                        <div class="hero-badge" data-aos="fade-down">
+                            <i class="fas fa-fire"></i> #1 Premium Fitness Center
+                        </div>
+                        <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">
+                            TRANSFORM YOUR<br>
+                            <span class="highlight-text">BODY & MIND</span>
+                        </h1>
+                        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="400">
+                            Push beyond limits and unlock your true potential with world-class trainers and cutting-edge
+                            facilities
+                        </p>
+                        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="600">
+                            <a href="#classes" class="btn btn-primary btn-lg">
+                                <span>Start Your Journey</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="#schedule" class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-play-circle"></i>
+                                <span>View Schedule</span>
+                            </a>
+                        </div>
+                        <div class="hero-stats" data-aos="fade-up" data-aos-delay="800">
+                            <div class="stat-item">
+                                <div class="stat-number">15K+</div>
+                                <div class="stat-label">Members</div>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <div class="stat-number">50+</div>
+                                <div class="stat-label">Expert Trainers</div>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <div class="stat-number">100+</div>
+                                <div class="stat-label">Classes Weekly</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+
+    <section id="api-data" class="api-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-badge"><i class="fas fa-bolt"></i> Live Feed</span>
+                <h2 class="section-title">Real-Time Updates</h2>
+                <p class="section-subtitle">Dynamic data from our API integration</p>
+            </div>
+            <div id="api-content" class="row">
+                <div class="col-12 text-center">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="classes" class="classes-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-badge"><i class="fas fa-fire"></i> Our Programs</span>
+                <h2 class="section-title">Elite Training Classes</h2>
+                <p class="section-subtitle">Choose your path to greatness</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="class-card" style="background-image: url('images/strength.png')">
+                        <div class="class-overlay"></div>
+                        <div class="class-content">
+                            <div class="class-icon">
+                                <i class="fas fa-dumbbell"></i>
+                            </div>
+                            <h3>Strength & Conditioning</h3>
+                            <p>Build explosive power and muscle mass with our advanced strength training programs</p>
+                            <a href="#error" class="btn-class">
+                                <span>Learn More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="class-card" style="background-image: url('images/hiit.png')">
+                        <div class="class-overlay"></div>
+                        <div class="class-content">
+                            <div class="class-icon">
+                                <i class="fas fa-running"></i>
+                            </div>
+                            <h3>HIIT & Group Training</h3>
+                            <p>High-intensity workouts designed to maximize calorie burn and boost metabolism</p>
+                            <a href="#error" class="btn-class">
+                                <span>Learn More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="class-card" style="background-image: url('images/yoga.png')">
+                        <div class="class-overlay"></div>
+                        <div class="class-content">
+                            <div class="class-icon">
+                                <i class="fas fa-spa"></i>
+                            </div>
+                            <h3>Yoga & Pilates</h3>
+                            <p>Enhance flexibility, balance, and mental clarity through mindful movement</p>
+                            <a href="#error" class="btn-class">
+                                <span>Learn More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="class-card">
+                        <div class="class-overlay"></div>
+                        <div class="class-content">
+                            <div class="class-icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <h3>Circuit Training</h3>
+                            <p>Fast-paced workouts combining cardio and strength for total body transformation</p>
+                            <a href="#error" class="btn-class">
+                                <span>Learn More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="class-card" style="background-image: url('images/athletic.png')">
+                        <div class="class-overlay"></div>
+                        <div class="class-content">
+                            <div class="class-icon">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <h3>Athletic Performance</h3>
+                            <p>Sport-specific training to elevate your athletic abilities to the next level</p>
+                            <a href="#error" class="btn-class">
+                                <span>Learn More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="class-card">
+                        <div class="class-overlay"></div>
+                        <div class="class-content">
+                            <div class="class-icon">
+                                <i class="fas fa-user-friends"></i>
+                            </div>
+                            <h3>Personal Training</h3>
+                            <p>One-on-one coaching customized to your unique goals and fitness level</p>
+                            <a href="#error" class="btn-class">
+                                <span>Learn More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-badge"><i class="fas fa-star"></i> Why Choose Us</span>
+                <h2 class="section-title">Premium Facilities</h2>
+                <p class="section-subtitle">Everything you need to succeed</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                        </div>
+                        <h3>Certified Trainers</h3>
+                        <p>Work with elite, certified professionals dedicated to your transformation</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                        </div>
+                        <h3>Modern Equipment</h3>
+                        <p>State-of-the-art facilities with cutting-edge fitness technology</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                        </div>
+                        <h3>Motivating Environment</h3>
+                        <p>Join a community of champions pushing towards greatness</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="schedule" class="schedule-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-badge"><i class="fas fa-calendar-alt"></i> Weekly Schedule</span>
+                <h2 class="section-title">Class Timetable</h2>
+                <p class="section-subtitle">Find your perfect training time</p>
+            </div>
+            <div class="schedule-wrapper" data-aos="fade-up" data-aos-delay="200">
+                <div class="table-responsive">
+                    <table class="table schedule-table">
+                        <thead>
+                            <tr>
+                                <th><i class="fas fa-clock"></i> Time</th>
+                                <th><i class="fas fa-dumbbell"></i> Class</th>
+                                <th><i class="fas fa-user"></i> Instructor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr data-aos="fade-right" data-aos-delay="100">
+                                <td><span class="time-badge">07:00 - 08:00</span></td>
+                                <td><strong>Morning Yoga</strong></td>
+                                <td>Anna Smith</td>
+                            </tr>
+                            <tr data-aos="fade-right" data-aos-delay="150">
+                                <td><span class="time-badge">08:00 - 09:00</span></td>
+                                <td><strong>Pilates</strong></td>
+                                <td>John Doe</td>
+                            </tr>
+                            <tr data-aos="fade-right" data-aos-delay="200">
+                                <td><span class="time-badge">09:00 - 10:00</span></td>
+                                <td><strong>Spin Class</strong></td>
+                                <td>Laura Daren</td>
+                            </tr>
+                            <tr data-aos="fade-right" data-aos-delay="250">
+                                <td><span class="time-badge">10:00 - 11:00</span></td>
+                                <td><strong>HIIT Training</strong></td>
+                                <td>Mike Johnson</td>
+                            </tr>
+                            <tr data-aos="fade-right" data-aos-delay="300">
+                                <td><span class="time-badge">11:30 - 12:30</span></td>
+                                <td><strong>Cardio Blast</strong></td>
+                                <td>Sarah Lee</td>
+                            </tr>
+                            <tr data-aos="fade-right" data-aos-delay="350">
+                                <td><span class="time-badge">17:00 - 18:00</span></td>
+                                <td><strong>Kickboxing</strong></td>
+                                <td>Mark Davis</td>
+                            </tr>
+                            <tr data-aos="fade-right" data-aos-delay="400">
+                                <td><span class="time-badge">18:00 - 19:00</span></td>
+                                <td><strong>CrossFit</strong></td>
+                                <td>Tom Harris</td>
+                            </tr>
+                            <tr data-aos="fade-right" data-aos-delay="450">
+                                <td><span class="time-badge">18:30 - 19:30</span></td>
+                                <td><strong>Zumba</strong></td>
+                                <td>Laura Green</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-badge"><i class="fas fa-images"></i> Your Journey</span>
+                <h2 class="section-title">Share Your Transformation</h2>
+                <p class="section-subtitle">Upload your progress photos</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+                    <div id="drop-zone" class="drop-zone">
+                        <div class="drop-zone-icon">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </div>
+                        <h3>Drag & Drop Images Here</h3>
+                        <p>or click to browse your files</p>
+                        <div class="supported-formats">
+                            <span>Supported: JPG, PNG, GIF, WebP</span>
+                        </div>
+                        <input type="file" id="file-input" accept="image/*" multiple hidden>
+                    </div>
+                    <div id="preview-container" class="preview-container mt-4"></div>
+                    <div id="upload-message" class="upload-message mt-3"></div>
+                    <div class="text-center mt-4">
+                        <button id="view-gallery-btn" class="btn btn-lg"
+                            style="background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%); color: white; border: none; padding: 1rem 2.5rem; font-size: 1rem; font-weight: 600; border-radius: 50px; box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3); transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.8rem;">
+                            <i class="fas fa-images"></i>
+                            <span>View Gallery</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="gallery-modal" class="gallery-modal">
+        <div class="gallery-modal-content">
+            <div class="gallery-modal-header">
+                <h2><i class="fas fa-images"></i> Uploaded Gallery</h2>
+                <button class="gallery-modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="gallery-modal-body">
+                <div id="gallery-grid" class="gallery-grid">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="footer-brand">
+                        <i class="fas fa-dumbbell"></i>
+                        <span>CLICK<span class="highlight">FIT</span></span>
+                    </div>
+                    <p>Transform your body and mind with elite trainers and premium facilities</p>
+                    <div class="social-links">
+                        <a href="#error"><i class="fab fa-facebook"></i></a>
+                        <a href="#error"><i class="fab fa-instagram"></i></a>
+                        <a href="#error"><i class="fab fa-twitter"></i></a>
+                        <a href="#error"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#classes"><i class="fas fa-chevron-right"></i> Classes</a></li>
+                        <li><a href="#features"><i class="fas fa-chevron-right"></i> Features</a></li>
+                        <li><a href="#schedule"><i class="fas fa-chevron-right"></i> Schedule</a></li>
+                        <li><a href="#error"><i class="fas fa-chevron-right"></i> Membership</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <h5>Contact Info</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Fitness Street, Gym City</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@clickfit.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom text-center mt-4 pt-4" data-aos="fade-up" data-aos-delay="400">
+                <p>&copy; Click Fit. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
